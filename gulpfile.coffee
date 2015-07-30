@@ -3,14 +3,15 @@ coffee = require ('gulp-coffee')
 jade = require ('gulp-jade')
 stylus = require ('gulp-stylus')
 yaml = require ('gulp-yaml')
+sass = require ('gulp-sass')
 
-gulp.task 'default', ['coffee', 'jade', 'styl', 'yaml']
+gulp.task 'default', ['coffee', 'jade', 'styl', 'yaml', 'inuit']
 
 gulp.task 'watch',
     ->
         gulp.watch './src/**', ['default']
 
-gulp.task 'coffee_gulpfile',
+gulp.task 'gulpfile',
     ->
         gulp.src './gulpfile.coffee'
         .pipe coffee {bare: true}
@@ -38,4 +39,11 @@ gulp.task 'yaml',
     ->
         gulp.src './src/**/*.yml'
         .pipe yaml { space: 4 }
+        .pipe gulp.dest './build'
+
+gulp.task 'inuit',
+    ->
+        gulp.src './inuit.css-web-template/css/style.scss'
+        .pipe sass {}
+            .on 'error', sass.logError
         .pipe gulp.dest './build'

@@ -1,0 +1,3 @@
+[submodule "inuit.css-web-template"]
+	path = inuit.css-web-template
+	url = https://github.com/csswizardry/inuit.css-web-template

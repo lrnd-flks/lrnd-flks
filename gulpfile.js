@@ -12,7 +12,7 @@ yaml = require('gulp-yaml');
 
 sass = require('gulp-sass');
 
-gulp.task('default', ['coffee', 'jade', 'styl', 'yaml', 'inuit']);
+gulp.task('default', ['coffee', 'jade', 'styl', 'yaml']);
 
 gulp.task('watch', function() {
   return gulp.watch('./src/**', ['default']);

@@ -1,14 +1,46 @@
 doctype html
-html(lang="en")
-    include ./include/head-default.jade
+html(lang='en')
+    head
+        title lrnd.flks
+        link(rel='stylesheet'
+            href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+        include ./include/head-default.jade
     body
-        h1 lrnd.flks
-        h1
-            i we're in business of 
-                strong thought organization
 
-        ul
-            li are
-            li do
-            li tell
-            li join
+        div.page
+
+            h4
+                i
+                    strong thought organization 
+                    | minimalist and innovative
+
+            h1 lrnd.flks
+
+            hr.rule--ornament
+
+            ul
+                li are 
+                    i a team
+                li do 
+                    i systems design
+                li tell 
+                    i know-hows
+
+            h6
+                i you 
+                | may join
+
+            ul
+                li go black
+                li go white
+
+            ul
+                li
+                    a(href='https://telegram.me/joinchat/030520720129ed13372becc552a3c7e1')
+                        img(src='https://web.telegram.org/favicon.ico')
+                li
+                    a(href='mailto://lrnd.flks@gmail.com')
+                        i.fa.fa-envelope.fa-2x
+                li
+                    a(href='https://github.com/lrnd-flks')
+                        i.fa.fa-github.fa-2x

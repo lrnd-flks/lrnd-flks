@@ -1,4 +1,4 @@
-var coffee, gulp, jade, sass, stylus, yaml;
+var coffee, gulp, jade, minifyHTML, sass, stylus, yaml;
 
 gulp = require('gulp');
 
@@ -11,6 +11,8 @@ stylus = require('gulp-stylus');
 yaml = require('gulp-yaml');
 
 sass = require('gulp-sass');
+
+minifyHTML = require('gulp-minify-html');
 
 gulp.task('default', ['coffee', 'jade', 'styl', 'yaml']);
 
@@ -27,7 +29,7 @@ gulp.task('gulpfile', function() {
 gulp.task('jade', function() {
   return gulp.src('./src/**/*.jade').pipe(jade({
     pretty: true
-  })).pipe(gulp.dest('./build'));
+  })).pipe(minifyHTML({})).pipe(gulp.dest('./build'));
 });
 
 gulp.task('coffee', function() {

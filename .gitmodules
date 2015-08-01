@@ -4,3 +4,6 @@
 [submodule "fluidity"]
 	path = fluidity
 	url = https://github.com/InkSpeck/fluidity
+[submodule "kouto-swiss"]
+	path = kouto-swiss
+	url = https://github.com/krkn/kouto-swiss

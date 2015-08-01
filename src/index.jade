@@ -2,48 +2,49 @@ doctype html
 html(lang='en')
     head
         title lrnd.flks
-        include ./include/head-default.jade
+        include include/head-default
     body
         header
-            ul.color
-                li go black
-                li.active go white
-            h1.brand-headline lrnd.flks
+            div.clearfix
+                ul.color
+                    li go black
+                    li.active go white
             p.brand-subscript thought organization 
+            h1.brand-headline lrnd.flks
             hr
             ul.articles
                 li.blocklink.active
                     a(href='#')
                         span.filler
-                    span.decoration
                     dl.content
                         dt are 
                         dd minimalist &&nbsp;innovative
                 li.blocklink
                     a(href='#')
                         span.filler
-                    span.decoration
                     dl.content
                         dt do
                         dd systems design
                 li.blocklink
                     a(href='#')
                         span.filler
-                    span.decoration
                     dl.content
                         dt tell 
                         dd how to build an empire
-            h6.calling
-                i you 
-                | may join
-            ul.connect
-                li
-                    a(href='https://telegram.me/joinchat/030520720129ed13372becc552a3c7e1')
-                        p telegram
-                li
-                    a(href='https://github.com/lrnd-flks')
-                        p github
-                li
-                    a(href='mailto://lrnd.flks@gmail.com')
-                        p email
-        article
+            ul.articles.calling
+                li.blocklink
+                    a(href='#')
+                        span.filler
+                    p.content you may join
+            include include/connect
+            hr
+        main
+            article
+                h2
+                section
+                    p
+                aside
+        footer
+            hr
+            include include/connect
+            hr

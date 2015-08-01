@@ -1,0 +1,17 @@
+html
+    head
+        style
+            | div { display: inline-block; }
+            | .hover:hover .sub { color: red; }
+            | .extra ~ .hover { text-decoration: underline; }
+            | .hover:not(.extra ~ .hover) { color: green; }
+    body
+        ul
+            li
+                div.hover hover me and 
+                    div.sub i will change color
+            li
+                div.extra
+                div.hover hover me and 
+                    div.sub i will change color
+

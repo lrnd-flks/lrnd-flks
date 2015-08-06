@@ -7,11 +7,19 @@ html(lang='en')
         header
             div.clearfix
                 ul.color
-                    li go black
-                    li.active go white
-            p.brand-subscript thought organization 
-            h1.brand-headline lrnd.flks
-            hr
+                    li.css-switch#black go black
+                    li.css-switch.active#white go white
+            div.brand
+                h1.brand-headline lrnd.flks
+                p.brand-subscript
+                    span.brand-subscript-underline thou
+                    span.brand-subscript-nounderline g
+                    span.brand-subscript-underline ht
+                    span.brand-subscript-nounderline &nbsp;
+                    span.brand-subscript-underline or
+                    span.brand-subscript-nounderline g
+                    span.brand-subscript-underline anization 
+                // hr.brand-underline
             ul.articles
                 li.blocklink.active
                     a(href='#')
@@ -45,6 +53,4 @@ html(lang='en')
                     p
                 aside
         footer
-            hr
             include include/connect
-            hr

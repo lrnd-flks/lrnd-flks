@@ -1,10 +1,10 @@
 @css {@import url(http://fonts.googleapis.com/css?family=Palanquin:500|Maven+Pro:700,400);}
-@import '../fluidity/lib/fluidity'
 @import '../kouto-swiss'
 
 meyer-reset()
 box-sizing-reset()
 normalize()
+@import '../fluidity/lib/fluidity'
 
 understroke(color)
     content ' '
@@ -27,6 +27,25 @@ dt, dd
     font-family 'Maven Pro'
     font-weight 400
 
+ul.tilde
+    list-style-type none
+    li:before
+        content '~'
+        margin-right 0.5em
+        font-size 1.25em
+        line-height 0.8
+
+
+ul.horizontal
+    list-style-type none
+    li
+        display inline-block
+        margin-right 1em
+
+ol.horizontal
+    li
+        display inline-block
+        margin-right 1em
 
 .articles
     list-style-type none

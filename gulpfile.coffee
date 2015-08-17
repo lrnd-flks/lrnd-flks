@@ -5,6 +5,7 @@ stylus = require ('gulp-stylus')
 yaml = require ('gulp-yaml')
 sass = require ('gulp-sass')
 minifyHTML = require ('gulp-minify-html')
+pages = require ('gulp-gh-pages')
 
 gulp.task 'default', ['coffee', 'jade', 'styl', 'yaml']
 
@@ -20,7 +21,7 @@ gulp.task 'gulpfile',
 
 gulp.task 'jade',
     ->
-        gulp.src './src/**/*.jade'
+        gulp.src ['./src/**/*.jade', '!./src/_*/**/*.jade']
         .pipe jade {pretty: true}
         .pipe minifyHTML { }
         .pipe gulp.dest './build'
@@ -49,3 +50,8 @@ gulp.task 'inuit',
         .pipe sass {}
             .on 'error', sass.logError
         .pipe gulp.dest './build'
+
+gulp.task 'pages',
+    ->
+        gulp.src './build/**/*'
+            .pipe pages {}

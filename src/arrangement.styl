@@ -40,10 +40,25 @@ ul.tilde
 
 
 ul.horizontal
+    vertical-align middle
     list-style-type none
     li
         display inline-block
-        margin-right 1em
+    li:not(.disc):not(:first-child):before
+        content ' '
+        height 0.5ex
+        width 0.5ex
+        border-radius 50%
+        margin auto 1ex auto
+        background-color: color-foreground
+        display inline-block
+        vertical-align middle
+    li.disc:not(:first-child):before
+        content '\25cf'
+        margin auto 1ex
+
+
+
 
 ol.horizontal
     li

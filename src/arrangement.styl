@@ -165,3 +165,14 @@ mark, .mark
     background-color black
     border-radius 0.5ex
     color #ccc
+
+ol.capitals
+    list-style-type none
+    counter-reset i
+
+ol.capitals li
+    counter-increment i
+
+ol.capitals li:before
+    content counter(i, upper-latin) '.'
+    margin-right 1em

@@ -1,3 +1,321 @@
+@import url(http://fonts.googleapis.com/css?family=Palanquin:500|Maven+Pro:700,400|Quattrocento+Sans);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
 /* normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif /* 1 */;
@@ -88,6 +406,8 @@ figure {
 }
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -138,6 +458,8 @@ input {
 }
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box /* 1 */;
+  -moz-box-sizing: border-box /* 1 */;
   box-sizing: border-box /* 1 */;
   padding: 0 /* 2 */;
 }
@@ -149,6 +471,8 @@ input[type="search"] {
   -webkit-appearance: textfield /* 1 */;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box /* 2 */;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-cancel-button,
@@ -737,13 +1061,58 @@ html.flui-preload body * {
 }
 html {
   font-size: 14px;
-  font-family: 'MavenPro-Medium';
+  font-family: 'Maven Pro';
+  font-weight: 400;
   background-color: color-background;
   color: color-foreground;
 }
+html,
+body {
+  overflow-x: visible;
+  overflow-y: hidden;
+}
 dt,
 dd {
-  font-family: 'MavenPro-Medium';
+  font-family: 'Maven Pro';
+  font-weight: 400;
+}
+ul.tilde {
+  list-style-type: none;
+}
+ul.tilde li:before {
+  content: '~';
+  margin-right: 0.5em;
+  font-size: 1.25em;
+  line-height: 0.8;
+}
+ul.horizontal {
+  vertical-align: middle;
+  list-style-type: none;
+}
+ul.horizontal li {
+  display: inline-block;
+}
+ul.horizontal li:not(.disc):not(:first-child):before {
+  content: ' ';
+  height: 0.5ex;
+  width: 0.5ex;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin: auto 1ex auto;
+  background-color: color-foreground;
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.horizontal li.disc:not(:first-child):before {
+  content: '\25cf';
+  margin: auto 1ex;
+}
+ol.horizontal li {
+  display: inline-block;
+  margin-right: 1em;
 }
 .articles {
   list-style-type: none;
@@ -761,12 +1130,9 @@ dd {
   list-style-type: none;
   float: right;
 }
-.clearfix:before,
-.clearfix:after {
-  content: " ";
+.clearfix::after {
   display: table;
-}
-.clearfix:after {
+  content: '';
   clear: both;
 }
 .color > li:not(.active) {
@@ -818,44 +1184,20 @@ footer hr {
   position: relative;
   margin: 0.5rem auto;
 }
-hr:after {
-  content: ' ';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  border-left: solid color-foreground 1px;
-  border-bottom: solid color-foreground stroke-boldness;
-}
-@font-face {
-  font-family: 'Open Sans Regular';
-  src: url("fonts/OpenSans-Regular.ttf");
-}
-@font-face {
-  font-family: 'Play-Regular';
-  src: url("fonts/Play-Regular.ttf");
-}
-@font-face {
-  font-family: 'MavenPro-Medium';
-  src: url("fonts/MavenPro-Medium.ttf");
-}
-@font-face {
-  font-family: 'Palanquin-Medium';
-  src: url("fonts/Palanquin/Palanquin-Medium.ttf");
-}
 .brand {
   font-size: 3rem;
 }
 .brand-headline {
-  font-family: 'Palanquin-Medium';
+  font-family: 'Palanquin';
+  font-weight: 500;
   margin-bottom: 0;
   line-height: 0.9;
   font-weight: normal;
   font-size: 2.9em;
 }
 .brand-subscript {
-  font-family: 'MavenPro-Medium';
+  font-family: 'Maven Pro';
+  font-weight: 700;
   font-size: 0.7rem;
   margin: 0 auto;
   font-size: 1em;
@@ -875,4 +1217,46 @@ a,
 a:visited {
   color: color-active;
   text-decoration: none;
+}
+main {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  min-width: 960px;
+  font-family: 'Quattrocento Sans';
+}
+.italic {
+  font-style: italic;
+}
+mark,
+.mark {
+  border: solid 1px #333;
+  background-color: #000;
+  -moz-border-radius: 0.5ex;
+  -webkit-border-radius: 0.5ex;
+  -o-border-radius: 0.5ex;
+  -ms-border-radius: 0.5ex;
+  border-radius: 0.5ex;
+  color: #ccc;
+}
+ol.capitals {
+  list-style-type: none;
+  counter-reset: i;
+}
+ol.capitals li {
+  counter-increment: i;
+}
+ol.capitals li:before {
+  content: counter(i, upper-latin) '.';
+  margin-right: 1em;
+}
+.spacer-10 {
+  margin-left: 10rem;
+}
+.spacer-20 {
+  margin-left: 20rem;
+}
+.widen {
+  letter-spacing: 0.1em;
 }
